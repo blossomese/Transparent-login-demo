@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg-img {
+    background: url('/img/summer.jpg');
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-img::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0 , 0, 0.4);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 999;
+    padding: 20px 30px;
+    background: rgba(225, 225, 225, 0.04);
+    box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.07);
+   width: 23rem;
+   height: 450px;
+}
+
+.content header {
+    color: white ;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 0 40px 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.field span {
+    color: #222;
+    width: 40px;
+    line-height: 45px;
+
+}
+
+.field {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    display: flex;
+   background: rgba(225, 225, 225, 0.94);
+  
+}
+
+.field input {
+    height: 100%;
+    width:100%;
+background: transparent;
+border: none;
+outline: none;
+
+color: #222;
+font-size: 16px;
+font-family: 'Nanum Gothic', sans-serif;
+}
+
+.show{
+    position: absolute;
+    right: 13px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #222;
+    cursor: pointer;
+    display: none;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+
+.password:valid ~ .show{
+    display: block;
+}
+
+.space {
+    margin-top: 20px ;
+}
+
+.pass {
+    text-align: left;
+    margin: 10px 0;
+}
+ 
+.pass a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Nanum Gothic';
+}
+
+.pass:hover a{
+    text-decoration: underline;
+}
+
+input[type="submit"] {
+    background: #3498db;
+    border: 1px solid #2691d9;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: 'Nanum Gothic';
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background: #2691d9;
+}
+
+.login {
+    color: white;
+    font-family: 'Nanum Gothic';
+    font-size: 15px;
+margin: 15px 0;
+}
+
+.link{
+    margin: 0 0 20px 0;
+    display: flex;
+    cursor:pointer;
+    color: white;
+    
+}
+
+.link i{
+    font-size: 17px;
+}
+
+.link span {
+font-size: 15px;
+margin-left: 8px;
+letter-spacing: 1px;
+font-weight: bold;
+font-family:'Nanum Gothic';
+}
+
+.facebook, .instagram {
+    width: 100%;
+    height: 42px;
+    line-height: 45px;
+   margin-top: 10px;
+   margin-left: 10px;
+}
+
+.facebook{
+    background: #426782;
+    border: 1px solid #395692;
+} 
+
+.instagram{
+    background: #E1306c;
+    border: 1px solid #f73e8b;
+} 
+
+.signup{
+    color: white;
+    font-size: 15px;
+    font-family:'Nanum Gothic';
+}
+
+.signup a{
+    color: #3498db;
+    text-decoration: none;
+}
+
+.signup a:hover{
+    text-decoration: underline;
+}
